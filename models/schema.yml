@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: customer
+    columns:
+      - name: Customer_Id
+        tests:
+          - unique
+          - not_null
+  - name: order
+    columns:
+      - name: Order_Id
+        tests:
+          - unique
+          - not_null
+  - name: product
+    columns:
+      - name: Product_Id
+        tests:
+          - unique
+          - not_null
+  - name: sales_by_city
+    columns:
+      - name: City
+        tests:
+          - unique
+          - not_null
+  - name: sales_by_productcategory
+    columns:
+      - name: Product_Category_Id
+        tests:
+          - unique
+          - not_null
+          
